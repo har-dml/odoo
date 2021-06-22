@@ -13,6 +13,7 @@
             - 'amount' - The amount to pay. Optional (sale_subscription)
             - 'currency' - The currency of the transaction, as a `res.currency` record
             - 'partner_id' - The id of the partner on behalf of whom the payment should be made
+            - 'invoice_id' - The id of the invoice being paid. Optional
             - 'access_token' - The access token used to authenticate the partner.
             - 'transaction_route' - The route used to create a transaction when the user clicks Pay
             - 'landing_route' - The route the user is redirected to after the transaction
@@ -24,6 +25,7 @@
               t-att-data-amount="amount"
               t-att-data-currency-id="currency and currency.id"
               t-att-data-partner-id="partner_id"
+              t-att-data-invoice-id="invoice_id"
               t-att-data-access-token="access_token"
               t-att-data-transaction-route="transaction_route"
               t-att-data-landing-route="landing_route"
